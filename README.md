@@ -1,4 +1,4 @@
-#📒 SmartNotesKMP
+# 📒 SmartNotesKMP
 
 Кроссплатформенное приложение заметок (Android + Desktop) на Kotlin Multiplatform с Compose и Koin.
 
