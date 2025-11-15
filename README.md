@@ -1,40 +1,32 @@
-This is a Kotlin Multiplatform project targeting Android, Desktop (JVM).
+#📒 SmartNotesKMP
 
-* [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - [commonMain](./composeApp/src/commonMain/kotlin) is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    the [iosMain](./composeApp/src/iosMain/kotlin) folder would be the right place for such calls.
-    Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./composeApp/src/jvmMain/kotlin)
-    folder is the appropriate location.
+Кроссплатформенное приложение заметок (Android + Desktop) на Kotlin Multiplatform с Compose и Koin.
 
-### Build and Run Android Application
+SmartNotesKMP — это простое и удобное приложение для создания и редактирования заметок.
+Проект создан на Kotlin Multiplatform, поэтому работает и на Android, и на Desktop (JVM), используя единую логику данных.
 
-To build and run the development version of the Android app, use the run configuration from the run widget
-in your IDE’s toolbar or build it directly from the terminal:
-- on macOS/Linux
-  ```shell
-  ./gradlew :composeApp:assembleDebug
-  ```
-- on Windows
-  ```shell
-  .\gradlew.bat :composeApp:assembleDebug
-  ```
+#### 🚀 Возможности:
+###### ✏️ Создание заметок
+###### 🗂 Просмотр списка заметок
+###### 📝 Редактирование содержимого
+###### 💾 Автоматическое сохранение
+###### 💉 DI через Koin
+###### 🧭 Навигация через Compose Navigation
+###### 💻 Поддержка Compose Desktop
+###### 📱 Android UI на Material3
 
-### Build and Run Desktop (JVM) Application
+#### 🛠 Технологии
+##### Общая логика (KMP):
+Kotlin Multiplatform
+Coroutines / Flow
+Koin (DI)
+Shared repository & model
 
-To build and run the development version of the desktop app, use the run configuration from the run widget
-in your IDE’s toolbar or run it directly from the terminal:
-- on macOS/Linux
-  ```shell
-  ./gradlew :composeApp:run
-  ```
-- on Windows
-  ```shell
-  .\gradlew.bat :composeApp:run
-  ```
+##### Android:
+Jetpack Compose
+Material3
+Navigation Compose
 
----
-
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+##### Desktop (JVM):
+Compose Multiplatform Desktop
+Материальный UI, адаптированный под Desktop
